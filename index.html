@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- ─── NAVBAR ─── -->
   <nav class="navbar">
     <span class="navbar-logo" onclick="navigate('home')">AP</span>
     <div class="navbar-links">
@@ -23,10 +22,8 @@
     </div>
   </nav>
 
-  <!-- ─── MAIN ─── -->
   <main class="main-content">
 
-    <!-- ════════ HOME ════════ -->
     <section id="page-home" class="page active">
 
       <div class="fade-in">
@@ -40,14 +37,14 @@
           I build systems that turn complex data into clear decisions. From architecting
           cloud native AI pipelines to visualizing urban crime patterns, my work sits at the
           intersection of software engineering, data science, and human centered design. I am
-          driven by a conviction that technology should make information not just accessible but
-          actionable, whether the audience is a Fortune 500 stakeholder reviewing an LLM gateway
+          driven by an idea that technology should make information not just accessible but
+          actionable, whether the audience is an executive reviewing an LLM gateway
           or a city planner studying robbery hotspots.
         </p>
         <p class="body-text" style="margin-bottom: 48px;">
           The three artifacts collected here represent the breadth of my technical range and the
           consistency of my values: rigorous analysis, scalable architecture, and the belief that
-          every dataset tells a story worth telling well.
+          every dataset tells a story worth telling.
         </p>
       </div>
 
@@ -76,13 +73,13 @@
 
           <div class="artifact-card" onclick="navigate('aws')">
             <h3>AWS LLM Gateway Architecture</h3>
-            <p>A production grade serverless blueprint for document aware conversational AI, designed and led during a cloud engineering internship.</p>
+            <p>A production grade serverless blueprint for document aware conversational AI, designed, built, and led during a cloud engineering internship at Johns Hopkins APL.</p>
             <div class="card-link">View artifact →</div>
           </div>
 
           <div class="artifact-card" onclick="navigate('bitcoin')">
             <h3>Bitcoin Price Predictor</h3>
-            <p>A data science pipeline applying statistical analysis and polynomial regression to forecast cryptocurrency price movements.</p>
+            <p>A data science pipeline applying statistical analysis and polynomial regression to forecast Bitcoin cryptocurrency price movements.</p>
             <div class="card-link">View artifact →</div>
           </div>
 
@@ -91,7 +88,6 @@
 
     </section>
 
-    <!-- ════════ CHICAGO ════════ -->
     <section id="page-chicago" class="page">
 
       <div class="fade-in">
@@ -124,11 +120,11 @@
             This artifact is an interactive web visualization I created for CMSC 471 (Introduction to
             Artificial Intelligence) at UMD. The project explores robbery incident data from the City
             of Chicago's public crime database and surfaces predictable temporal and spatial patterns
-            that would be invisible in raw tabular data. Built with D3.js for interactive charting and
-            geographic rendering, along with standard HTML, CSS, and JavaScript, the application lets
-            users filter by time of day, day of week, and neighborhood to discover when and where
+            that would be not be so obviois in raw tabular data. Built with D3.js for interactive charting,
+            along with standard HTML, CSS, and JavaScript, the application lets
+            users filter by time of day, and day of week to discover when and where
             robberies cluster. The visualization transforms thousands of police report records into an
-            intuitive, browser based experience that any non technical stakeholder, from a city council
+            intuitive, browser based experience that any non technical person, from a city council
             member to a community organizer, can explore without installing software or writing queries.
           </p>
           <p>
@@ -139,19 +135,18 @@
             scales, projections, and data joins rather than offering the plug and play convenience of
             higher level charting tools. Choosing D3 was a deliberate decision to prioritize
             expressiveness and control over ease of implementation. Third, and perhaps most
-            importantly, it embodies my belief that data work is incomplete until it reaches an
-            audience. Raw analysis locked inside a notebook has limited impact; an accessible,
+            importantly, it represents my belief that data work is incomplete until it reaches an
+            audience. Raw analysis locked inside a notebook has limited impact. An accessible,
             interactive visualization invites exploration, builds trust in the findings, and can
             genuinely inform decisions about resource allocation and public safety. This project
-            sharpened my understanding that the last mile of data science is communication, and that
-            front end engineering is often the vehicle for that communication.
+            sharpened my understanding that the last peice of data science is communication, and that
+            front end engineering is often the means for that communication.
           </p>
         </div>
       </div>
 
     </section>
 
-    <!-- ════════ AWS ════════ -->
     <section id="page-aws" class="page">
 
       <div class="fade-in">
@@ -181,15 +176,15 @@
           <h2>Contextual Statement</h2>
           <p>
             This artifact is an architecture blueprint for an "LLM Gateway", a fully serverless,
-            document aware conversational AI platform built entirely on AWS services. I designed and
+            document context conversational AI platform built entirely on AWS services. I designed and
             led this project during a cloud engineering internship, serving simultaneously as the lead
             software engineer, AWS architect, and project manager. The system allows end users to
-            upload PDF documents through a React front end hosted on AWS Amplify; those documents are
+            upload PDF documents through a React front end hosted on AWS Amplify. Those documents are
             stored in S3, processed by a chain of Lambda functions that extract metadata and generate
             vector embeddings via Amazon Bedrock, and queued through SQS for asynchronous ingestion.
             When a user asks a question, a separate Lambda function retrieves the relevant vector dump
             from S3, fetches conversation memory from DynamoDB, and sends both the contextual
-            embeddings and the query to Amazon Bedrock to generate a grounded, document aware
+            embeddings and the query to Amazon Bedrock to generate a accurate, document context
             response. User authentication is handled by Amazon Cognito, and all CRUD operations for
             conversation history and document metadata flow through DynamoDB.
           </p>
@@ -202,10 +197,10 @@
             understanding of AWS's shared responsibility model. On the leadership side, this project
             required me to translate a vague business requirement ("let our team chat with internal
             documents") into a concrete technical plan, decompose it into milestones, coordinate with
-            stakeholders, and deliver a working prototype within the internship timeline. The
+            management, and deliver a working prototype within the three month internship timeline. The
             experience taught me that architecture is as much a communication artifact as a technical
             one: this single diagram became the primary tool for aligning engineers, product managers,
-            and executives on scope, data flow, and security boundaries. It solidified my aspiration
+            and executives on scope, data flow, and security boundaries. It solidified my wish
             to work at the intersection of cloud infrastructure and applied AI, where the challenge is
             not just building intelligent systems but making them reliable, secure, and
             production ready.
@@ -215,7 +210,6 @@
 
     </section>
 
-    <!-- ════════ BITCOIN ════════ -->
     <section id="page-bitcoin" class="page">
 
       <div class="fade-in">
@@ -252,7 +246,7 @@
             from late 2014 through early 2022, I built a complete analytical pipeline: data curation
             and cleaning with Pandas, exploratory analysis through Seaborn and Matplotlib
             visualizations, formal hypothesis testing with Pearson correlation coefficients and
-            Augmented Dickey-Fuller tests, and predictive modeling using both linear and degree 12
+            Augmented Dickey Fuller tests, and predictive modeling using both linear and degree 12
             polynomial regression via scikit learn. The project found a moderate positive correlation
             between time and volatility (PCC ≈ 0.60), confirmed a statistically significant
             relationship between trading volume and closing price, and produced a polynomial
@@ -263,11 +257,11 @@
           </p>
           <p>
             This project showcases my ability to execute the full data science lifecycle, from
-            formulating a driving question through data wrangling, statistical testing, model
+            formulating a driving question through data exploration, statistical testing, model
             selection, and interpretation of results. Several methodological choices reflect skills I
             want to carry into my career. I used multiple statistical frameworks (Pearson, chi square,
             ADF) rather than relying on a single test, demonstrating that I understand the importance
-            of converging evidence. I explicitly addressed overfitting risk by discussing
+            of converging and different aspects of evidence. I explicitly addressed overfitting risk by discussing
             train test splits, polynomial degree selection, and the tension between model complexity
             and generalizability. These are concepts that matter as much in production ML systems as in academic
             exercises. I also framed every statistical finding in plain language aimed at a
@@ -275,7 +269,7 @@
             communicated clearly to create real value. More broadly, this notebook reflects my
             curiosity about financial markets and my willingness to engage with high stakes,
             inherently uncertain domains. These are qualities that will serve me in data engineering and applied
-            machine learning roles where imperfect data is the norm, not the exception.
+            machine learning roles when working with different types of data.
           </p>
         </div>
       </div>
@@ -316,11 +310,6 @@
     </section>
 
   </main>
-
-  <!-- ─── FOOTER ─── -->
-  <footer class="footer">
-    © 2026 Aadarsh Patel · Computer Science · UMD
-  </footer>
 
   <script src="js/script.js"></script>
 </body>
