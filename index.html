@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aadarsh Patel | ePortfolio</title>
+  <meta name="description" content="ePortfolio of Aadarsh Patel — Computer Science, University of Maryland, May 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar">
+    <span class="navbar-logo" onclick="navigate('home')">AP</span>
+    <div class="navbar-links">
+      <button class="nav-btn active" data-page="home">About</button>
+      <button class="nav-btn" data-page="chicago">Chicago Crime Viz</button>
+      <button class="nav-btn" data-page="aws">AWS LLM Gateway</button>
+      <button class="nav-btn" data-page="bitcoin">Bitcoin Predictor</button>
+    </div>
+  </nav>
+
+  <!-- ─── MAIN ─── -->
+  <main class="main-content">
+
+    <!-- ════════ HOME ════════ -->
+    <section id="page-home" class="page active">
+
+      <div class="fade-in">
+        <div class="section-label">Portfolio</div>
+        <h1 class="page-title">Aadarsh Patel</h1>
+      </div>
+
+      <div class="fade-in" data-delay="150">
+        <p class="subtitle">Computer Science · University of Maryland · May 2026</p>
+        <p class="body-text">
+          I build systems that turn complex data into clear decisions. From architecting
+          cloud native AI pipelines to visualizing urban crime patterns, my work sits at the
+          intersection of software engineering, data science, and human centered design. I am
+          driven by a conviction that technology should make information not just accessible but
+          actionable, whether the audience is a Fortune 500 stakeholder reviewing an LLM gateway
+          or a city planner studying robbery hotspots.
+        </p>
+        <p class="body-text" style="margin-bottom: 48px;">
+          The three artifacts collected here represent the breadth of my technical range and the
+          consistency of my values: rigorous analysis, scalable architecture, and the belief that
+          every dataset tells a story worth telling well.
+        </p>
+      </div>
+
+      <div class="fade-in" data-delay="300">
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">AWS</span>
+          <span class="tag">D3.js</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Cloud Architecture</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">React</span>
+          <span class="tag">Serverless</span>
+        </div>
+      </div>
+
+      <div class="fade-in" data-delay="400">
+        <div class="section-label">Artifacts</div>
+        <div class="cards-container">
+
+          <div class="artifact-card" onclick="navigate('chicago')">
+            <h3>Chicago Robbery Pattern Visualization</h3>
+            <p>An interactive D3.js web application revealing temporal and geographic robbery patterns across Chicago's neighborhoods.</p>
+            <div class="card-link">View artifact →</div>
+          </div>
+
+          <div class="artifact-card" onclick="navigate('aws')">
+            <h3>AWS LLM Gateway Architecture</h3>
+            <p>A production grade serverless blueprint for document aware conversational AI, designed and led during a cloud engineering internship.</p>
+            <div class="card-link">View artifact →</div>
+          </div>
+
+          <div class="artifact-card" onclick="navigate('bitcoin')">
+            <h3>Bitcoin Price Predictor</h3>
+            <p>A data science pipeline applying statistical analysis and polynomial regression to forecast cryptocurrency price movements.</p>
+            <div class="card-link">View artifact →</div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ════════ CHICAGO ════════ -->
+    <section id="page-chicago" class="page">
+
+      <div class="fade-in">
+        <div class="section-label">Artifact 1</div>
+        <h1 class="artifact-title">Chicago Robbery Pattern Visualization</h1>
+        <div class="tags compact">
+          <span class="tag">D3.js</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">GeoJSON</span>
+        </div>
+      </div>
+
+      <div class="fade-in" data-delay="150">
+        <div class="preview-wrapper" onclick="window.open('https://ap-18.github.io/CMSC471-A1/', '_blank')">
+          <div class="preview-frame-container">
+            <iframe src="https://ap-18.github.io/CMSC471-A1/" class="preview-iframe" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+          </div>
+          <div class="preview-overlay">
+            <span class="preview-overlay-text">Click to open full project ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in" data-delay="250">
+        <div class="content-box">
+          <h2>Contextual Statement</h2>
+          <p>
+            This artifact is an interactive web visualization I created for CMSC 471 (Introduction to
+            Artificial Intelligence) at UMD. The project explores robbery incident data from the City
+            of Chicago's public crime database and surfaces predictable temporal and spatial patterns
+            that would be invisible in raw tabular data. Built with D3.js for interactive charting and
+            geographic rendering, along with standard HTML, CSS, and JavaScript, the application lets
+            users filter by time of day, day of week, and neighborhood to discover when and where
+            robberies cluster. The visualization transforms thousands of police report records into an
+            intuitive, browser based experience that any non technical stakeholder, from a city council
+            member to a community organizer, can explore without installing software or writing queries.
+          </p>
+          <p>
+            This project demonstrates several competencies I value as a developer entering the
+            workforce. First, it reflects my ability to work across the full web development stack:
+            from data ingestion and cleaning to DOM manipulation and responsive layout. Second, it
+            showcases my comfort with D3.js, a library that demands a deep understanding of SVG,
+            scales, projections, and data joins rather than offering the plug and play convenience of
+            higher level charting tools. Choosing D3 was a deliberate decision to prioritize
+            expressiveness and control over ease of implementation. Third, and perhaps most
+            importantly, it embodies my belief that data work is incomplete until it reaches an
+            audience. Raw analysis locked inside a notebook has limited impact; an accessible,
+            interactive visualization invites exploration, builds trust in the findings, and can
+            genuinely inform decisions about resource allocation and public safety. This project
+            sharpened my understanding that the last mile of data science is communication, and that
+            front end engineering is often the vehicle for that communication.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ════════ AWS ════════ -->
+    <section id="page-aws" class="page">
+
+      <div class="fade-in">
+        <div class="section-label">Artifact 2</div>
+        <h1 class="artifact-title">AWS LLM Gateway Architecture</h1>
+        <div class="tags compact">
+          <span class="tag">AWS</span>
+          <span class="tag">Lambda</span>
+          <span class="tag">API Gateway</span>
+          <span class="tag">DynamoDB</span>
+          <span class="tag">S3</span>
+          <span class="tag">Bedrock</span>
+          <span class="tag">SQS</span>
+          <span class="tag">Cognito</span>
+          <span class="tag">React</span>
+        </div>
+      </div>
+
+      <div class="fade-in" data-delay="150">
+        <div class="blueprint-container">
+          <img src="images/aws_blueprint.png" alt="AWS LLM Gateway Architecture Blueprint" />
+        </div>
+      </div>
+
+      <div class="fade-in" data-delay="250">
+        <div class="content-box">
+          <h2>Contextual Statement</h2>
+          <p>
+            This artifact is an architecture blueprint for an "LLM Gateway", a fully serverless,
+            document aware conversational AI platform built entirely on AWS services. I designed and
+            led this project during a cloud engineering internship, serving simultaneously as the lead
+            software engineer, AWS architect, and project manager. The system allows end users to
+            upload PDF documents through a React front end hosted on AWS Amplify; those documents are
+            stored in S3, processed by a chain of Lambda functions that extract metadata and generate
+            vector embeddings via Amazon Bedrock, and queued through SQS for asynchronous ingestion.
+            When a user asks a question, a separate Lambda function retrieves the relevant vector dump
+            from S3, fetches conversation memory from DynamoDB, and sends both the contextual
+            embeddings and the query to Amazon Bedrock to generate a grounded, document aware
+            response. User authentication is handled by Amazon Cognito, and all CRUD operations for
+            conversation history and document metadata flow through DynamoDB.
+          </p>
+          <p>
+            This blueprint reveals several dimensions of my professional capability. On the technical
+            side, it demonstrates fluency in cloud native, event driven design: choosing SQS to
+            decouple document ingestion from the request path, using DynamoDB for low latency
+            conversational memory, and leveraging Bedrock's managed inference rather than
+            self hosting models. Each decision reflects cost awareness, scalability thinking, and an
+            understanding of AWS's shared responsibility model. On the leadership side, this project
+            required me to translate a vague business requirement ("let our team chat with internal
+            documents") into a concrete technical plan, decompose it into milestones, coordinate with
+            stakeholders, and deliver a working prototype within the internship timeline. The
+            experience taught me that architecture is as much a communication artifact as a technical
+            one: this single diagram became the primary tool for aligning engineers, product managers,
+            and executives on scope, data flow, and security boundaries. It solidified my aspiration
+            to work at the intersection of cloud infrastructure and applied AI, where the challenge is
+            not just building intelligent systems but making them reliable, secure, and
+            production ready.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ════════ BITCOIN ════════ -->
+    <section id="page-bitcoin" class="page">
+
+      <div class="fade-in">
+        <div class="section-label">Artifact 3</div>
+        <h1 class="artifact-title">Bitcoin Price Predictor</h1>
+        <div class="tags compact">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">scikit learn</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Seaborn</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Statistical Analysis</span>
+        </div>
+      </div>
+
+      <div class="fade-in" data-delay="150">
+        <div class="preview-wrapper" onclick="window.open('data/Bitcoin_Stock_Predictor.html', '_blank')">
+          <div class="preview-frame-container preview-tall">
+            <iframe src="data/Bitcoin_Stock_Predictor.html" class="preview-iframe" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+          </div>
+          <div class="preview-overlay">
+            <span class="preview-overlay-text">Click to open full notebook ↗</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in" data-delay="250">
+        <div class="content-box">
+          <h2>Contextual Statement</h2>
+          <p>
+            This artifact is a Jupyter Notebook based data science project that investigates the
+            question "Is Bitcoin a profitable buy?" Using a Kaggle dataset of daily Bitcoin prices
+            from late 2014 through early 2022, I built a complete analytical pipeline: data curation
+            and cleaning with Pandas, exploratory analysis through Seaborn and Matplotlib
+            visualizations, formal hypothesis testing with Pearson correlation coefficients and
+            Augmented Dickey-Fuller tests, and predictive modeling using both linear and degree 12
+            polynomial regression via scikit learn. The project found a moderate positive correlation
+            between time and volatility (PCC ≈ 0.60), confirmed a statistically significant
+            relationship between trading volume and closing price, and produced a polynomial
+            regression model that predicted Bitcoin's rise into the $70,000 range during 2024, closely
+            aligning with actual market outcomes when Bitcoin hit an all time high of $73,000 in
+            March 2024. The linear regression model achieved an R² of 0.9996 on training data, while
+            the test RMSE of approximately $163 demonstrated strong generalization.
+          </p>
+          <p>
+            This project showcases my ability to execute the full data science lifecycle, from
+            formulating a driving question through data wrangling, statistical testing, model
+            selection, and interpretation of results. Several methodological choices reflect skills I
+            want to carry into my career. I used multiple statistical frameworks (Pearson, chi square,
+            ADF) rather than relying on a single test, demonstrating that I understand the importance
+            of converging evidence. I explicitly addressed overfitting risk by discussing
+            train test splits, polynomial degree selection, and the tension between model complexity
+            and generalizability. These are concepts that matter as much in production ML systems as in academic
+            exercises. I also framed every statistical finding in plain language aimed at a
+            non technical investor audience, reinforcing my belief that analytical work must be
+            communicated clearly to create real value. More broadly, this notebook reflects my
+            curiosity about financial markets and my willingness to engage with high stakes,
+            inherently uncertain domains. These are qualities that will serve me in data engineering and applied
+            machine learning roles where imperfect data is the norm, not the exception.
+          </p>
+        </div>
+      </div>
+
+      <div class="fade-in" data-delay="300">
+        <div class="content-box">
+          <h2>Key Findings</h2>
+          <div class="findings-list">
+
+            <div class="finding-item">
+              <div class="finding-value">0.9996</div>
+              <div>
+                <div class="finding-label">Model Accuracy (R²)</div>
+                <div class="finding-detail">Linear regression explained 99.96% of price variance</div>
+              </div>
+            </div>
+
+            <div class="finding-item">
+              <div class="finding-value">PCC = 0.601</div>
+              <div>
+                <div class="finding-label">Volatility Correlation</div>
+                <div class="finding-detail">Moderate positive relationship between time and market volatility</div>
+              </div>
+            </div>
+
+            <div class="finding-item">
+              <div class="finding-value">~$70K</div>
+              <div>
+                <div class="finding-label">2024 Price Prediction</div>
+                <div class="finding-detail">Polynomial model closely predicted Bitcoin's actual 2024 peak of $73K</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    © 2026 Aadarsh Patel · Computer Science · UMD
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
